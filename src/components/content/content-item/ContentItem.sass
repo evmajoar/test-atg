@@ -1,0 +1,64 @@
+@import '../../../styles/libraries/index';
+  
+.content-item
+  min-height: 274px
+  border-radius: 24px
+  color: $c-white
+  margin: 64px 0
+  padding: 21px 42px 21px 21px
+  position: relative
+
+  @include breakPoint(desktop)
+    min-height: 544px
+    padding: 42px 96px 42px 42px
+    margin: 60px 0
+
+  &:first-child
+    margin-top: 37px
+
+    @include breakPoint(desktop)
+      margin-top: 60px
+
+  &:nth-child(odd)
+    background: #F8B9C4 center / cover no-repeat
+
+  &:nth-child(even)
+    background: #67A6D1 center / cover no-repeat  
+      
+  &__header-left
+    float: left
+
+  &__header-right
+    float: right
+
+    @include breakPoint(desktop)
+    font-size: 24px
+
+  &__title
+    font:
+      size: $f-size-md
+      weight: 500
+
+  &__note
+    display: block 
+    margin-top: 5px
+
+    @include breakPoint(desktop)
+      margin-top: 14px
+
+  &__button
+    position: absolute
+    bottom: 41px
+    left: 21px
+
+    @include breakPoint(desktop)
+      bottom: 64px
+      left: 42px
+
+    svg 
+      width: 58px
+      height: 54px
+
+      @include breakPoint(desktop)
+        width: 84px
+        height: 75px

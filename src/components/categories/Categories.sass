@@ -1,0 +1,16 @@
+@import '../../styles/libraries/index';
+  
+.categories
+  &__item
+    float: left
+    // margin-right: 35px
+    position: relative
+
+    &--active
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        width: 24px
+        height: 3px
+        background-color: $c-purple;

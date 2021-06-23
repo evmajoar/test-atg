@@ -1,0 +1,37 @@
+@import '../../styles/libraries/index';
+  
+.nav
+  &__item
+    display: block
+    margin: 0 auto 75px
+    
+  &__link
+    display: block
+    position: relative
+    
+    // &::before
+    //   content: ''
+    //   display: none
+    //   position: absolute
+    //   left: 0
+    //   top: 0
+    //   bottom: 0
+    //   width: 3px
+    //   height: 100%
+
+    //   @include breakPoint(desktop)
+    //       display: block 
+
+    svg
+      display: block
+      margin: 0 auto
+      fill: $c-peach
+
+      g, path
+        fill: inherit
+
+    &.current
+      svg
+        fill: $c-purple
+
+

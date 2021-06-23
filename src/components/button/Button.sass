@@ -1,0 +1,38 @@
+@import '../../styles/libraries/index'
+  
+.button
+  display: block
+
+  &--as-link
+    font-size: $f-size-md
+    font-weight: 700
+    color: $c-beige
+    padding: 16px
+    
+    &.current
+      color: $c-purple
+
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        width: 24px
+        height: 3px
+        background-color: $c-purple
+        bottom: 0
+        left: calc(50% - 12px)
+
+  &--as-icon
+    padding: 0
+    
+    &.current
+      &::after
+        width: 3px
+        height: 100%
+        left: 0
+        bottom: 0
+        top: 0
+        display: none
+
+        @include breakPoint(desktop)
+          display: block 

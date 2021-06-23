@@ -1,0 +1,6 @@
+@mixin breakPoint($size) 
+  @if ($size == desktop) 
+    @media (min-width: 992px) 
+      @content;
+    
+  
